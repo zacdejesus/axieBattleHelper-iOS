@@ -1,0 +1,7 @@
+# ignored files
+
+.DS_Store
+Podfile.lock
+Pods
+Config.xcconfig
+GoogleService-Info.plist

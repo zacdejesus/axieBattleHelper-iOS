@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54D4BF161C854569A781D1C1 /* Pods_Axie_battle_helper_Axie_battle_helperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C4577BB884A30C42D20D10 /* Pods_Axie_battle_helper_Axie_battle_helperUITests.framework */; };
+		5EC8AB8C7F3ED7ABE2906127 /* Pods_Axie_battle_helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93FFC01831A3C2EE47EFDF0 /* Pods_Axie_battle_helper.framework */; };
+		AC5DF7F12720B8E300AF0247 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5DF7F02720B8E300AF0247 /* Enums.swift */; };
+		AC5DF7F827210E2800AF0247 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC5DF7F727210E2800AF0247 /* Montserrat-Light.otf */; };
+		AC5DF7FA27210E3300AF0247 /* Montserrat-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC5DF7F927210E3300AF0247 /* Montserrat-Thin.otf */; };
+		AC5DF7FC27210EF600AF0247 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC5DF7FB27210EF600AF0247 /* Montserrat-Bold.otf */; };
+		AC5DF7FE272112CB00AF0247 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC5DF7FD272112CB00AF0247 /* Montserrat-Medium.otf */; };
+		AC817E1B273EB88100F0D7B0 /* AxieConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC817E1A273EB88100F0D7B0 /* AxieConstants.swift */; };
+		AC817E1E273EBAF300F0D7B0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC817E1D273EBAF300F0D7B0 /* String.swift */; };
+		AC817E20273EBBD300F0D7B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC817E1F273EBBD300F0D7B0 /* Localizable.strings */; };
+		ACB26F7A2731DF3800471DBE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB26F792731DF3800471DBE /* GoogleService-Info.plist */; };
+		ACB5512627164CE200D66778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5512527164CE200D66778 /* AppDelegate.swift */; };
+		ACB5512827164CE200D66778 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5512727164CE200D66778 /* SceneDelegate.swift */; };
+		ACB5512A27164CE200D66778 /* AxieHelperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5512927164CE200D66778 /* AxieHelperViewController.swift */; };
+		ACB5512D27164CE200D66778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB5512B27164CE200D66778 /* Main.storyboard */; };
+		ACB5512F27164CE500D66778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB5512E27164CE500D66778 /* Assets.xcassets */; };
+		ACB5513227164CE500D66778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB5513027164CE500D66778 /* LaunchScreen.storyboard */; };
+		ACB5513D27164CE600D66778 /* Axie_battle_helperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5513C27164CE600D66778 /* Axie_battle_helperTests.swift */; };
+		ACB5514727164CE600D66778 /* Axie_battle_helperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB5514627164CE600D66778 /* Axie_battle_helperUITests.swift */; };
+		ACC0E9232717415D000EEDC1 /* SlpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E9222717415D000EEDC1 /* SlpData.swift */; };
+		ACC0E9282717439A000EEDC1 /* SlpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC0E9272717439A000EEDC1 /* SlpService.swift */; };
+		ACC8CFAD272181310078001E /* AxieHelperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8CFAC272181310078001E /* AxieHelperPresenter.swift */; };
+		ACCE81A8271FB7BE006D906E /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = ACCE81A7271FB7BE006D906E /* Config.xcconfig */; };
+		F2EBB651C2567389672141F3 /* Pods_Axie_battle_helperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285AA19ADB0AA24B996EE351 /* Pods_Axie_battle_helperTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACB5513927164CE600D66778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACB5511A27164CE200D66778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACB5512127164CE200D66778;
+			remoteInfo = "Axie battle helper";
+		};
+		ACB5514327164CE600D66778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACB5511A27164CE200D66778 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACB5512127164CE200D66778;
+			remoteInfo = "Axie battle helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		285AA19ADB0AA24B996EE351 /* Pods_Axie_battle_helperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axie_battle_helperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9006BC07F582DC819F5FADBB /* Pods-Axie battle helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helper.release.xcconfig"; path = "Target Support Files/Pods-Axie battle helper/Pods-Axie battle helper.release.xcconfig"; sourceTree = "<group>"; };
+		91040E540AF43C17C6864511 /* Pods-Axie battle helperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helperTests.debug.xcconfig"; path = "Target Support Files/Pods-Axie battle helperTests/Pods-Axie battle helperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		91B9ED3DC0C67ADC3484060B /* Pods-Axie battle helperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helperTests.release.xcconfig"; path = "Target Support Files/Pods-Axie battle helperTests/Pods-Axie battle helperTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC5DF7F02720B8E300AF0247 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		AC5DF7F727210E2800AF0247 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		AC5DF7F927210E3300AF0247 /* Montserrat-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.otf"; sourceTree = "<group>"; };
+		AC5DF7FB27210EF600AF0247 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		AC5DF7FD272112CB00AF0247 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		AC817E1A273EB88100F0D7B0 /* AxieConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxieConstants.swift; sourceTree = "<group>"; };
+		AC817E1D273EBAF300F0D7B0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AC817E1F273EBBD300F0D7B0 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ACB26F792731DF3800471DBE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ACB5512227164CE200D66778 /* Axie battle helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Axie battle helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB5512527164CE200D66778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACB5512727164CE200D66778 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACB5512927164CE200D66778 /* AxieHelperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxieHelperViewController.swift; sourceTree = "<group>"; };
+		ACB5512C27164CE200D66778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACB5512E27164CE500D66778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACB5513127164CE500D66778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACB5513327164CE500D66778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB5513827164CE600D66778 /* Axie battle helperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axie battle helperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB5513C27164CE600D66778 /* Axie_battle_helperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axie_battle_helperTests.swift; sourceTree = "<group>"; };
+		ACB5514227164CE600D66778 /* Axie battle helperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Axie battle helperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB5514627164CE600D66778 /* Axie_battle_helperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axie_battle_helperUITests.swift; sourceTree = "<group>"; };
+		ACC0E9222717415D000EEDC1 /* SlpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlpData.swift; sourceTree = "<group>"; };
+		ACC0E9272717439A000EEDC1 /* SlpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlpService.swift; sourceTree = "<group>"; };
+		ACC8CFAC272181310078001E /* AxieHelperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxieHelperPresenter.swift; sourceTree = "<group>"; };
+		ACCE81A7271FB7BE006D906E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		B974A50B61BA6E62369CEF9E /* Pods-Axie battle helper-Axie battle helperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helper-Axie battle helperUITests.release.xcconfig"; path = "Target Support Files/Pods-Axie battle helper-Axie battle helperUITests/Pods-Axie battle helper-Axie battle helperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7C4577BB884A30C42D20D10 /* Pods_Axie_battle_helper_Axie_battle_helperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axie_battle_helper_Axie_battle_helperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E93FFC01831A3C2EE47EFDF0 /* Pods_Axie_battle_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Axie_battle_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEF09C2622654133DC7CA8C /* Pods-Axie battle helper-Axie battle helperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helper-Axie battle helperUITests.debug.xcconfig"; path = "Target Support Files/Pods-Axie battle helper-Axie battle helperUITests/Pods-Axie battle helper-Axie battle helperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8185DDBC7C795AFAB4E7689 /* Pods-Axie battle helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Axie battle helper.debug.xcconfig"; path = "Target Support Files/Pods-Axie battle helper/Pods-Axie battle helper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACB5511F27164CE200D66778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC8AB8C7F3ED7ABE2906127 /* Pods_Axie_battle_helper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5513527164CE600D66778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2EBB651C2567389672141F3 /* Pods_Axie_battle_helperTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5513F27164CE600D66778 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D4BF161C854569A781D1C1 /* Pods_Axie_battle_helper_Axie_battle_helperUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D355C35085DBB9CCD6E82B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E93FFC01831A3C2EE47EFDF0 /* Pods_Axie_battle_helper.framework */,
+				E7C4577BB884A30C42D20D10 /* Pods_Axie_battle_helper_Axie_battle_helperUITests.framework */,
+				285AA19ADB0AA24B996EE351 /* Pods_Axie_battle_helperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC5DF7F227210D9D00AF0247 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC5DF7F727210E2800AF0247 /* Montserrat-Light.otf */,
+				AC5DF7FD272112CB00AF0247 /* Montserrat-Medium.otf */,
+				AC5DF7F927210E3300AF0247 /* Montserrat-Thin.otf */,
+				AC5DF7FB27210EF600AF0247 /* Montserrat-Bold.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		AC817E19273EB85200F0D7B0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AC817E1A273EB88100F0D7B0 /* AxieConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		AC817E1C273EBAD200F0D7B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC817E1D273EBAF300F0D7B0 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACB5511927164CE200D66778 = {
+			isa = PBXGroup;
+			children = (
+				ACB5512427164CE200D66778 /* Axie battle helper */,
+				ACB5513B27164CE600D66778 /* Axie battle helperTests */,
+				ACB5514527164CE600D66778 /* Axie battle helperUITests */,
+				ACB5512327164CE200D66778 /* Products */,
+				AF1BCCBF56DC3E6456F92CFB /* Pods */,
+				4D355C35085DBB9CCD6E82B4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACB5512327164CE200D66778 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5512227164CE200D66778 /* Axie battle helper.app */,
+				ACB5513827164CE600D66778 /* Axie battle helperTests.xctest */,
+				ACB5514227164CE600D66778 /* Axie battle helperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACB5512427164CE200D66778 /* Axie battle helper */ = {
+			isa = PBXGroup;
+			children = (
+				AC817E1C273EBAD200F0D7B0 /* Extensions */,
+				AC817E19273EB85200F0D7B0 /* Constants */,
+				AC5DF7F227210D9D00AF0247 /* fonts */,
+				ACC0E9262717431A000EEDC1 /* Presenters */,
+				ACC0E92527174311000EEDC1 /* Views */,
+				ACC0E924271742FA000EEDC1 /* DataSource */,
+				ACC0E92127171567000EEDC1 /* Model */,
+				ACB5512527164CE200D66778 /* AppDelegate.swift */,
+				ACB5512727164CE200D66778 /* SceneDelegate.swift */,
+				ACB5512B27164CE200D66778 /* Main.storyboard */,
+				ACB5512E27164CE500D66778 /* Assets.xcassets */,
+				ACB5513027164CE500D66778 /* LaunchScreen.storyboard */,
+				ACB5513327164CE500D66778 /* Info.plist */,
+				ACCE81A7271FB7BE006D906E /* Config.xcconfig */,
+				ACB26F792731DF3800471DBE /* GoogleService-Info.plist */,
+				AC817E1F273EBBD300F0D7B0 /* Localizable.strings */,
+			);
+			path = "Axie battle helper";
+			sourceTree = "<group>";
+		};
+		ACB5513B27164CE600D66778 /* Axie battle helperTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5513C27164CE600D66778 /* Axie_battle_helperTests.swift */,
+			);
+			path = "Axie battle helperTests";
+			sourceTree = "<group>";
+		};
+		ACB5514527164CE600D66778 /* Axie battle helperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5514627164CE600D66778 /* Axie_battle_helperUITests.swift */,
+			);
+			path = "Axie battle helperUITests";
+			sourceTree = "<group>";
+		};
+		ACC0E92127171567000EEDC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0E9222717415D000EEDC1 /* SlpData.swift */,
+				AC5DF7F02720B8E300AF0247 /* Enums.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACC0E924271742FA000EEDC1 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				ACC0E9272717439A000EEDC1 /* SlpService.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		ACC0E92527174311000EEDC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACB5512927164CE200D66778 /* AxieHelperViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACC0E9262717431A000EEDC1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				ACC8CFAC272181310078001E /* AxieHelperPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		AF1BCCBF56DC3E6456F92CFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8185DDBC7C795AFAB4E7689 /* Pods-Axie battle helper.debug.xcconfig */,
+				9006BC07F582DC819F5FADBB /* Pods-Axie battle helper.release.xcconfig */,
+				EAEF09C2622654133DC7CA8C /* Pods-Axie battle helper-Axie battle helperUITests.debug.xcconfig */,
+				B974A50B61BA6E62369CEF9E /* Pods-Axie battle helper-Axie battle helperUITests.release.xcconfig */,
+				91040E540AF43C17C6864511 /* Pods-Axie battle helperTests.debug.xcconfig */,
+				91B9ED3DC0C67ADC3484060B /* Pods-Axie battle helperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACB5512127164CE200D66778 /* Axie battle helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB5514C27164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helper" */;
+			buildPhases = (
+				D746234EAFE46F160E8A9C10 /* [CP] Check Pods Manifest.lock */,
+				ACB5511E27164CE200D66778 /* Sources */,
+				ACB5511F27164CE200D66778 /* Frameworks */,
+				ACB5512027164CE200D66778 /* Resources */,
+				D9761F8BE8584AFDDDBDD380 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Axie battle helper";
+			productName = "Axie battle helper";
+			productReference = ACB5512227164CE200D66778 /* Axie battle helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACB5513727164CE600D66778 /* Axie battle helperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB5514F27164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helperTests" */;
+			buildPhases = (
+				DF0671B091820DCBBF2B74F2 /* [CP] Check Pods Manifest.lock */,
+				ACB5513427164CE600D66778 /* Sources */,
+				ACB5513527164CE600D66778 /* Frameworks */,
+				ACB5513627164CE600D66778 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACB5513A27164CE600D66778 /* PBXTargetDependency */,
+			);
+			name = "Axie battle helperTests";
+			productName = "Axie battle helperTests";
+			productReference = ACB5513827164CE600D66778 /* Axie battle helperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACB5514127164CE600D66778 /* Axie battle helperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACB5515227164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helperUITests" */;
+			buildPhases = (
+				A2874C13C7A3EA34CCCD43C9 /* [CP] Check Pods Manifest.lock */,
+				ACB5513E27164CE600D66778 /* Sources */,
+				ACB5513F27164CE600D66778 /* Frameworks */,
+				ACB5514027164CE600D66778 /* Resources */,
+				6E952CE744CE57196C03650F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACB5514427164CE600D66778 /* PBXTargetDependency */,
+			);
+			name = "Axie battle helperUITests";
+			productName = "Axie battle helperUITests";
+			productReference = ACB5514227164CE600D66778 /* Axie battle helperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACB5511A27164CE200D66778 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					ACB5512127164CE200D66778 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					ACB5513727164CE600D66778 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ACB5512127164CE200D66778;
+					};
+					ACB5514127164CE600D66778 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = ACB5512127164CE200D66778;
+					};
+				};
+			};
+			buildConfigurationList = ACB5511D27164CE200D66778 /* Build configuration list for PBXProject "Axie battle helper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACB5511927164CE200D66778;
+			productRefGroup = ACB5512327164CE200D66778 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACB5512127164CE200D66778 /* Axie battle helper */,
+				ACB5513727164CE600D66778 /* Axie battle helperTests */,
+				ACB5514127164CE600D66778 /* Axie battle helperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACB5512027164CE200D66778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCE81A8271FB7BE006D906E /* Config.xcconfig in Resources */,
+				AC5DF7FE272112CB00AF0247 /* Montserrat-Medium.otf in Resources */,
+				ACB26F7A2731DF3800471DBE /* GoogleService-Info.plist in Resources */,
+				AC5DF7FA27210E3300AF0247 /* Montserrat-Thin.otf in Resources */,
+				AC5DF7FC27210EF600AF0247 /* Montserrat-Bold.otf in Resources */,
+				AC817E20273EBBD300F0D7B0 /* Localizable.strings in Resources */,
+				ACB5513227164CE500D66778 /* LaunchScreen.storyboard in Resources */,
+				ACB5512F27164CE500D66778 /* Assets.xcassets in Resources */,
+				ACB5512D27164CE200D66778 /* Main.storyboard in Resources */,
+				AC5DF7F827210E2800AF0247 /* Montserrat-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5513627164CE600D66778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5514027164CE600D66778 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E952CE744CE57196C03650F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper-Axie battle helperUITests/Pods-Axie battle helper-Axie battle helperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper-Axie battle helperUITests/Pods-Axie battle helper-Axie battle helperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper-Axie battle helperUITests/Pods-Axie battle helper-Axie battle helperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2874C13C7A3EA34CCCD43C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Axie battle helper-Axie battle helperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D746234EAFE46F160E8A9C10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Axie battle helper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9761F8BE8584AFDDDBDD380 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper/Pods-Axie battle helper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper/Pods-Axie battle helper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Axie battle helper/Pods-Axie battle helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0671B091820DCBBF2B74F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Axie battle helperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACB5511E27164CE200D66778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB5512A27164CE200D66778 /* AxieHelperViewController.swift in Sources */,
+				ACC8CFAD272181310078001E /* AxieHelperPresenter.swift in Sources */,
+				AC817E1B273EB88100F0D7B0 /* AxieConstants.swift in Sources */,
+				AC817E1E273EBAF300F0D7B0 /* String.swift in Sources */,
+				ACC0E9232717415D000EEDC1 /* SlpData.swift in Sources */,
+				ACB5512627164CE200D66778 /* AppDelegate.swift in Sources */,
+				ACB5512827164CE200D66778 /* SceneDelegate.swift in Sources */,
+				AC5DF7F12720B8E300AF0247 /* Enums.swift in Sources */,
+				ACC0E9282717439A000EEDC1 /* SlpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5513427164CE600D66778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB5513D27164CE600D66778 /* Axie_battle_helperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB5513E27164CE600D66778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB5514727164CE600D66778 /* Axie_battle_helperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACB5513A27164CE600D66778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACB5512127164CE200D66778 /* Axie battle helper */;
+			targetProxy = ACB5513927164CE600D66778 /* PBXContainerItemProxy */;
+		};
+		ACB5514427164CE600D66778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACB5512127164CE200D66778 /* Axie battle helper */;
+			targetProxy = ACB5514327164CE600D66778 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACB5512B27164CE200D66778 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACB5512C27164CE200D66778 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACB5513027164CE500D66778 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACB5513127164CE500D66778 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACB5514A27164CE600D66778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACB5514B27164CE600D66778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACB5514D27164CE600D66778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8185DDBC7C795AFAB4E7689 /* Pods-Axie battle helper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Axie battle helper/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Axie Battle Helper";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACB5514E27164CE600D66778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9006BC07F582DC819F5FADBB /* Pods-Axie battle helper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Axie battle helper/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Axie Battle Helper";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACB5515027164CE600D66778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axie battle helper.app/Axie battle helper";
+			};
+			name = Debug;
+		};
+		ACB5515127164CE600D66778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Axie battle helper.app/Axie battle helper";
+			};
+			name = Release;
+		};
+		ACB5515327164CE600D66778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Axie battle helper";
+			};
+			name = Debug;
+		};
+		ACB5515427164CE600D66778 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACCE81A7271FB7BE006D906E /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTJLZH295U;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "alejandroDejesus.Axie-battle-helperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Axie battle helper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACB5511D27164CE200D66778 /* Build configuration list for PBXProject "Axie battle helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB5514A27164CE600D66778 /* Debug */,
+				ACB5514B27164CE600D66778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB5514C27164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB5514D27164CE600D66778 /* Debug */,
+				ACB5514E27164CE600D66778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB5514F27164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB5515027164CE600D66778 /* Debug */,
+				ACB5515127164CE600D66778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACB5515227164CE600D66778 /* Build configuration list for PBXNativeTarget "Axie battle helperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACB5515327164CE600D66778 /* Debug */,
+				ACB5515427164CE600D66778 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACB5511A27164CE200D66778 /* Project object */;
+}

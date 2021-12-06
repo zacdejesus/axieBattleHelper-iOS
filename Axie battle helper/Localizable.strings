@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Axie battle helper
+
+  Created by Alejandro de Jesus on 12/11/2021.
+  
+*/
+
+"Round 1" = "Round 1";
+"Please select how many SLP you won" = "Please select how many SLP you won";
+"Dismiss" = "Dismiss";
