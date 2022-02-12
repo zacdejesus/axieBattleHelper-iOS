@@ -11,25 +11,28 @@ enum WinValues : String , CaseIterable {
     
     case one = "1"
     case three = "3"
+    case five = "5"
     case six = "6"
-    case nine = "9"
+    case eight = "8"
+    case ten = "10"
     case twelve = "12"
-    case fifteen = "15"
     
-    func getSLPValue()-> Int {
+    func getSLPValue() -> Int {
         switch self {
         case .one:
             return 1
         case .three:
             return 3
+        case .five:
+            return 5
         case .six:
             return 6
-        case .nine:
-            return 9
+        case .eight:
+            return 8
+        case .ten:
+            return 10
         case .twelve:
             return 12
-        case .fifteen:
-            return 15
         }
     }
 }
@@ -37,26 +40,26 @@ enum WinValues : String , CaseIterable {
 enum DrawValues : String , CaseIterable {
     
     case one = "1"
+    case two = "2"
     case three = "3"
     case four = "4"
+    case five = "5"
     case six = "6"
-    case seven = "7"
-    case nine = "9"
     
-    func getSLPValue()-> Int {
+    func getSLPValue() -> Int {
         switch self {
         case .one:
             return 1
+        case .two:
+            return 2
         case .three:
             return 3
-        case .six:
-            return 6
         case .four:
             return 4
-        case .seven:
-            return 7
-        case .nine:
-            return 9
+        case .five:
+            return 5
+        case .six:
+            return 6
         }
     }
 }
