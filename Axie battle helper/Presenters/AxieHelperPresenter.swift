@@ -27,6 +27,8 @@ final class AxieHelperPresenter {
         set (newVal) {
             if newVal < 11 && newVal >= 0 {
                 _totalEnemyEnergy = newVal
+            } else if newVal == 11 {
+                _totalEnemyEnergy = 10
             }
         }
     }

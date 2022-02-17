@@ -1,23 +1,25 @@
 //
-//  ParstView.swift
+//  AxiePartsViewController.swift
 //  Axie battle helper
 //
-//  Created by Alejandro de Jesus on 30/12/2021.
+//  Created by Alejandro de Jesus on 12/02/2022.
 //
 
 import UIKit
 
-class PartsView: UIView, AxieHelperResetPartsDelegate {
+class AxiePartsViewController: UIViewController {
+
     
     // MARK: - Properties
     
     
     // MARK: - @IBOutlet
-    @IBOutlet var contentView: UIView!
     @IBOutlet weak var partsView: UIView!
     @IBOutlet weak var partsView2: UIView!
     @IBOutlet weak var partsView3: UIView!
     
+    @IBOutlet weak var prueba2: UILabel!
+    @IBOutlet weak var prueba: UILabel!
     @IBOutlet weak var firstAxiePartOneLabel: UILabel!
     @IBOutlet weak var firstAxiePartTwoLabel: UILabel!
     @IBOutlet weak var firstAxiePartThreeLabel: UILabel!
@@ -33,21 +35,12 @@ class PartsView: UIView, AxieHelperResetPartsDelegate {
     @IBOutlet weak var thirdAxiePartThreeLabel: UILabel!
     @IBOutlet weak var thirdAxiePartFourLabel: UILabel!
     
-    override
-    init(frame: CGRect) {
-        super.init(frame: frame)
-        commonInit()
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
-    
-    required
-    init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
-    }
-    
-    
     
     @IBAction func firstAxiePartOne(_ sender: UIButton) {
+        firstAxiePartOneLabel.text = "holis"
         handlePartTapped(firstAxiePartOneLabel)
     }
     
@@ -95,18 +88,36 @@ class PartsView: UIView, AxieHelperResetPartsDelegate {
         handlePartTapped(thirdAxiePartFourLabel)
     }
     
+    @IBAction func resetFirstAxieParts(_ sender: UIButton) {
+        resetFirstAxieParts()
+    }
+    
+    @IBAction func resetSecondAxieParts(_ sender: UIButton) {
+        resetSecondAxieParts()
+    }
+    
     @IBAction func resetThirdAxieParts(_ sender: UIButton) {
         resetThirdAxieParts()
     }
     
+    func resetAllParts() {
+        resetFirstAxieParts()
+        resetSecondAxieParts()
+        resetThirdAxieParts()
+    }
     
-    func handlePartTapped(_ labelToChange: UILabel) {
-        guard var number = Int(labelToChange.text ?? "") else { return }
-        
-        if number < 2 {
-            number += 1
-            labelToChange.text = String(number)
-        }
+    private func resetFirstAxieParts() {
+        firstAxiePartOneLabel.text = "0"
+        firstAxiePartTwoLabel.text = "0"
+        firstAxiePartThreeLabel.text = "0"
+        firstAxiePartFourLabel.text = "0"
+    }
+    
+    private func resetSecondAxieParts() {
+        secondAxiePartOneLabel.text = "0"
+        secondAxiePartTwoLabel.text = "0"
+        secondAxiePartThreeLabel.text = "0"
+        secondtAxiePartFourLabel.text = "0"
     }
     
     private func resetThirdAxieParts() {
@@ -116,31 +127,12 @@ class PartsView: UIView, AxieHelperResetPartsDelegate {
         thirdAxiePartFourLabel.text = "0"
     }
     
-    func setPartsReset() {
+    private func handlePartTapped(_ labelToChange: UILabel) {
+        guard var number = Int(labelToChange.text ?? "") else { return }
         
-        DispatchQueue.main.async {
-            self.resetThirdAxieParts()
+        if number < 2 {
+            number += 1
+            labelToChange.text = String(number)
         }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.resetThirdAxieParts()
-        }
-        
-        
-    }
-    
-    private func commonInit() {
-        Bundle.main.loadNibNamed("PartsView", owner: self, options: nil)
-        addSubview(contentView)
-        contentView.frame = self.bounds
-        contentView.frame.size.height = 210
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        partsViewSetup()
-    }
-    
-    private func partsViewSetup() {
-        partsView.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
-        partsView2.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
-        partsView3.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
     }
 }

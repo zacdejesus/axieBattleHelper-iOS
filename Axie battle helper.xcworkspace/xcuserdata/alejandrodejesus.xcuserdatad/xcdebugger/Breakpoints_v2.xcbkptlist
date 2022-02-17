@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F63B1A42-CF9A-4C0B-A4C5-BB0FDD29F007"
+            uuid = "D3CD9A9D-29C3-4E57-9132-6AD45D924278"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Axie battle helper/partsView/PartsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "setPartsReset()"
             landmarkType = "7">
          </BreakpointContent>

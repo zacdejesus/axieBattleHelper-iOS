@@ -8,12 +8,12 @@
 import UIKit
 import GoogleMobileAds
 
-class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBannerViewDelegate {
-
+class AxieHelperViewController: UIViewController, AxieHelperViewDelegate {
+    
     // MARK: - Properties
     private let axieHelperPresenter = AxieHelperPresenter(slpService: SlpService())
     
-    weak var axieHelperResetPartsDelegate: AxieHelperResetPartsDelegate?
+    var axieHelperResetPartsDelegate: AxieHelperResetPartsDelegate?
     
     // MARK: - @IBOutlet UILabels
     @IBOutlet weak var totalEnemyEnergyLabel: UILabel!
@@ -39,7 +39,124 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
     @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var energyView: UIView!
     @IBOutlet weak var slpCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var partsViewContainer: UIView!
+    
+    // MARK: - @IBOutlet TO BE move in the next release
+    
     @IBOutlet weak var partsView: UIView!
+    @IBOutlet weak var partsView2: UIView!
+    @IBOutlet weak var partsView3: UIView!
+    
+    @IBOutlet weak var firstAxiePartOneLabel: UILabel!
+    @IBOutlet weak var firstAxiePartTwoLabel: UILabel!
+    @IBOutlet weak var firstAxiePartThreeLabel: UILabel!
+    @IBOutlet weak var firstAxiePartFourLabel: UILabel!
+    
+    @IBOutlet weak var secondAxiePartOneLabel: UILabel!
+    @IBOutlet weak var secondAxiePartTwoLabel: UILabel!
+    @IBOutlet weak var secondAxiePartThreeLabel: UILabel!
+    @IBOutlet weak var secondtAxiePartFourLabel: UILabel!
+    
+    @IBOutlet weak var thirdAxiePartOneLabel: UILabel!
+    @IBOutlet weak var thirdAxiePartTwoLabel: UILabel!
+    @IBOutlet weak var thirdAxiePartThreeLabel: UILabel!
+    @IBOutlet weak var thirdAxiePartFourLabel: UILabel!
+    
+    @IBAction func firstAxiePartOne(_ sender: UIButton) {
+        handlePartTapped(firstAxiePartOneLabel)
+    }
+    
+    @IBAction func firstAxiePartTwo(_ sender: UIButton) {
+        handlePartTapped(firstAxiePartTwoLabel)
+    }
+    
+    @IBAction func firstAxiePartThree(_ sender: UIButton) {
+        handlePartTapped(firstAxiePartThreeLabel)
+    }
+    
+    @IBAction func firstAxiePartFour(_ sender: UIButton) {
+        handlePartTapped(firstAxiePartFourLabel)
+    }
+    
+    @IBAction func secondAxiePartOne(_ sender: UIButton) {
+        handlePartTapped(secondAxiePartOneLabel)
+    }
+    
+    @IBAction func secondAxiePartTwo(_ sender: UIButton) {
+        handlePartTapped(secondAxiePartTwoLabel)
+    }
+    
+    @IBAction func secondAxiePartThree(_ sender: UIButton) {
+        handlePartTapped(secondAxiePartThreeLabel)
+    }
+    
+    @IBAction func secondAxiePartFour(_ sender: UIButton) {
+        handlePartTapped(secondtAxiePartFourLabel)
+    }
+    
+    @IBAction func thirdAxiePartOne(_ sender: UIButton) {
+        handlePartTapped(thirdAxiePartOneLabel)
+    }
+    
+    @IBAction func thirdAxiePartTwoLabel(_ sender: UIButton) {
+        handlePartTapped(thirdAxiePartTwoLabel)
+    }
+    
+    @IBAction func thirdAxiePartThree(_ sender: UIButton) {
+        handlePartTapped(thirdAxiePartThreeLabel)
+    }
+    
+    @IBAction func thirdAxiePartFour(_ sender: UIButton) {
+        handlePartTapped(thirdAxiePartFourLabel)
+    }
+    
+    @IBAction func resetThirdAxieParts(_ sender: UIButton) {
+        resetThirdAxieParts()
+    }
+    
+    @IBAction func resetSecondAxieParts(_ sender: UIButton) {
+        resetSecondAxieParts()
+    }
+    
+    @IBAction func resetFirstAxieParts(_ sender: UIButton) {
+        resetFirstAxieParts()
+    }
+    
+    func resetAllParts() {
+        resetFirstAxieParts()
+        resetSecondAxieParts()
+        resetThirdAxieParts()
+    }
+    
+    private func resetFirstAxieParts() {
+        firstAxiePartOneLabel.text = "0"
+        firstAxiePartTwoLabel.text = "0"
+        firstAxiePartThreeLabel.text = "0"
+        firstAxiePartFourLabel.text = "0"
+    }
+    
+    private func resetSecondAxieParts() {
+        secondAxiePartOneLabel.text = "0"
+        secondAxiePartTwoLabel.text = "0"
+        secondAxiePartThreeLabel.text = "0"
+        secondtAxiePartFourLabel.text = "0"
+    }
+    
+    private func resetThirdAxieParts() {
+        thirdAxiePartOneLabel.text = "0"
+        thirdAxiePartTwoLabel.text = "0"
+        thirdAxiePartThreeLabel.text = "0"
+        thirdAxiePartFourLabel.text = "0"
+    }
+    
+    private func handlePartTapped(_ labelToChange: UILabel) {
+        guard var number = Int(labelToChange.text ?? "") else { return }
+        
+        if number < 2 {
+            number += 1
+            labelToChange.text = String(number)
+        }
+    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
@@ -54,8 +171,8 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
         
         axieHelperPresenter.setViewDelegate(axieHelperViewDelegate: self)
         
-        bannerView.delegate = self
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        //bannerView.delegate = self
+       // bannerView.adUnitID = Bundle.main.infoDictionary?["BANNER_KEY"] as? String
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         
@@ -90,23 +207,36 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
     }
     
     @IBAction func clearAllButton(_ sender: Any) {
-        resetEnergy()
-
-        axieHelperPresenter.totalSLP = 0
-        axieHelperPresenter.drawCountTotal = 0
-        axieHelperPresenter.loseCountTotal = 0
-        axieHelperPresenter.winCountTotal = 0
+        let alert = UIAlertController(title: "Do you want to reset?", message: "", preferredStyle: .alert)
         
-        usdtBalance.text = axieHelperPresenter.isUDSThidden ? "" : "≈ 0 USDT"
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil ))
         
-        loseCountLabel.text = "0"
-        winCountLabel.text = "0"
-        drawCountLabel.text = "0"
-        totalSLPLabel.text = "0"
-        roundLabel.text = AxieHelperConstants.round1
+        alert.addAction(UIAlertAction(title: "Reset", style: .default , handler:{ _ in
+            
+            self.resetEnergy()
+            
+            self.resetAllParts()
+            
+            self.axieHelperPresenter.totalSLP = 0
+            self.axieHelperPresenter.drawCountTotal = 0
+            self.axieHelperPresenter.loseCountTotal = 0
+            self.axieHelperPresenter.winCountTotal = 0
+            
+            self.usdtBalance.text = self.axieHelperPresenter.isUDSThidden ? "" : "≈ 0 USDT"
+            
+            self.loseCountLabel.text = "0"
+            self.winCountLabel.text = "0"
+            self.drawCountLabel.text = "0"
+            self.totalSLPLabel.text = "0"
+            self.roundLabel.text = AxieHelperConstants.round1
+        }))
         
+        // This is to prevent crashes in iPad
+        alert.popoverPresentationController?.sourceView = self.view
+        alert.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
+        alert.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
         
-        axieHelperResetPartsDelegate?.setPartsReset()
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func winButton(_ sender: Any) {
@@ -146,11 +276,13 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
         alert.popoverPresentationController?.sourceView = self.view
         alert.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
         alert.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-
+        
         self.present(alert, animated: true, completion: nil)
     }
     
     private func handleSLPChange(_ slp: Int, mode: gameResult) {
+        
+        resetAllParts()
         
         switch mode {
         case .win:
@@ -174,7 +306,7 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
             
             resetEnergy()
         case .draw:
-
+            
             axieHelperPresenter.drawCountTotal += 1
             drawCountLabel.text = String(axieHelperPresenter.drawCountTotal)
             
@@ -214,22 +346,9 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
     }
     
     private func resetEnergy() {
-        let alert = UIAlertController(title: "Do you want to reset?", message: "", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil ))
-        
-        alert.addAction(UIAlertAction(title: "Reset", style: .default , handler:{ _ in
-            self.axieHelperPresenter.totalEnemyEnergy = 3
-            self.axieHelperPresenter.roundCount = 1
-            self.totalEnemyEnergyLabel.text = "3"
-        }))
-    
-        // This is to prevent crashes in iPad
-        alert.popoverPresentationController?.sourceView = self.view
-        alert.popoverPresentationController?.permittedArrowDirections = UIPopoverArrowDirection()
-        alert.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
-
-        self.present(alert, animated: true, completion: nil)
+        self.axieHelperPresenter.totalEnemyEnergy = 3
+        self.axieHelperPresenter.roundCount = 1
+        self.totalEnemyEnergyLabel.text = "3"
     }
     
     private func backgroundSetup() {
@@ -262,12 +381,15 @@ class AxieHelperViewController: UIViewController, AxieHelperViewDelegate, GADBan
         drawButton.layer.cornerRadius = 7
         endTurnButton.layer.cornerRadius = 7
         resetButton.layer.cornerRadius = 7
+        
+        // TODO: to be delete in the future
+        partsView.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
+        partsView2.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
+        partsView3.layer.borderColor = UIColor(red: 170/255, green: 170/255, blue: 170/255, alpha: 0.75).cgColor
     }
     
     private func partsViewSetup() {
-        partsView.frame.size.height = 200
-        partsView.isHidden = UIScreen.main.bounds.height < 730
+        partsViewContainer.frame.size.height = 200
+        partsViewContainer.isHidden = UIScreen.main.bounds.height < 730
     }
 }
-
-
